@@ -12,7 +12,7 @@ Ferramentas utilizadas:
 -JUnit
 
 
-Todas as dependências estão configuradas através do Maven, então não imagino que ocorra algum outro problema dreferente as mesmas.
+Todas as dependências estão configuradas através do Maven, então não imagino que ocorra algum outro problema referente as mesmas.
 
 Qualquer problema não mencionado nesse readme, por favor, me contate em vsdbpessoal@gmail.com
 
