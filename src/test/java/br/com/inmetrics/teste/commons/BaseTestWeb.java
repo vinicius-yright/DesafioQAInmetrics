@@ -3,7 +3,7 @@ package br.com.inmetrics.teste.commons;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class BaseTest {
+public class BaseTestWeb {
     protected static WebDriver webDriver;
     protected static WebDriverWait wait;
 

@@ -1,13 +1,12 @@
 package br.com.inmetrics.teste.functionalities;
 
-import br.com.inmetrics.teste.commons.BaseTest;
-import br.com.inmetrics.teste.pages.LoginWebPage;
+import br.com.inmetrics.teste.commons.BaseTestWeb;
 import br.com.inmetrics.teste.pages.ObtemDadosCadastraisWebPage;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.io.*;
 
-public class ObterDadosCadastraisFunctionality extends BaseTest {
+public class ObterDadosCadastraisFunctionality extends BaseTestWeb {
 
     String nome, cpf, dataNasc, dataNascimento, email, tel, telefone, data ,telefoneNovo, dataNovo;
 

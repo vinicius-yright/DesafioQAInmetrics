@@ -1,10 +1,15 @@
 package br.com.inmetrics.teste.configuration;
 
-import br.com.inmetrics.teste.commons.BaseTest;
+import br.com.inmetrics.teste.commons.BaseTestWeb;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-public class Hooks extends BaseTest {
+import java.util.HashMap;
+import java.util.Map;
+
+import static io.restassured.RestAssured.given;
+
+public class Hooks extends BaseTestWeb {
 
     @Before(value = "@loginSucesso")
     public void beforeLoginSucesso() {
@@ -55,5 +60,6 @@ public class Hooks extends BaseTest {
     public void afterEdicaoSucesso() {
         closeWeb();
     }
+
 
 }

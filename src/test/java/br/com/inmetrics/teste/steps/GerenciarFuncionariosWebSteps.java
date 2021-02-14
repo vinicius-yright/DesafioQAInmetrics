@@ -1,10 +1,8 @@
 package br.com.inmetrics.teste.steps;
 
-import br.com.inmetrics.teste.functionalities.CadastroFunctionality;
+import br.com.inmetrics.teste.functionalities.CadastroWebFunctionality;
 import br.com.inmetrics.teste.functionalities.GerenciarFuncionariosFunctionality;
-import br.com.inmetrics.teste.functionalities.ObterDadosCadastraisFunctionality;
 import br.com.inmetrics.teste.functionalities.RealizarLoginFunctionality;
-import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
@@ -15,12 +13,12 @@ public class GerenciarFuncionariosWebSteps {
 
     RealizarLoginFunctionality realizarLoginFunctionality;
     GerenciarFuncionariosFunctionality gerenciarFuncionariosFunctionality;
-    CadastroFunctionality cadastroFunctionality;
+    CadastroWebFunctionality cadastroWebFunctionality;
 
     public GerenciarFuncionariosWebSteps() {
         this.realizarLoginFunctionality = new RealizarLoginFunctionality();
         this.gerenciarFuncionariosFunctionality = new GerenciarFuncionariosFunctionality();
-        this.cadastroFunctionality = new CadastroFunctionality();
+        this.cadastroWebFunctionality = new CadastroWebFunctionality();
     }
 
     @Dado("^que quero excluir um funcionario com sucesso$")
@@ -52,7 +50,7 @@ public class GerenciarFuncionariosWebSteps {
     @Quando("^edito as informacoes e clico no botao Submit Query$")
     public void editoAsInformacoesEClicoNoBotaoSubmitQuery() {
         this.gerenciarFuncionariosFunctionality.editarFuncionario();
-        this.cadastroFunctionality.clickFinalizarCadastro();
+        this.cadastroWebFunctionality.clickFinalizarCadastro();
     }
 
     @Entao("^recebo a mensagem \"([^\"]*)\"$")

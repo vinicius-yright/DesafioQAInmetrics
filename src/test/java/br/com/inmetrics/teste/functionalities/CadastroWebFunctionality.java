@@ -1,6 +1,6 @@
 package br.com.inmetrics.teste.functionalities;
 
-import br.com.inmetrics.teste.commons.BaseTest;
+import br.com.inmetrics.teste.commons.BaseTestWeb;
 import br.com.inmetrics.teste.pages.CadastroWebPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,12 +10,12 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 
-public class CadastroFunctionality extends BaseTest {
+public class CadastroWebFunctionality extends BaseTestWeb {
 
     private CadastroWebPage cadastroWebPage;
     String nomeNovo, cpfNovo, emailNovo, dataNovo, telefoneNovo;
 
-    public CadastroFunctionality() {
+    public CadastroWebFunctionality() {
         this.cadastroWebPage = new CadastroWebPage(webDriver);
     }
 

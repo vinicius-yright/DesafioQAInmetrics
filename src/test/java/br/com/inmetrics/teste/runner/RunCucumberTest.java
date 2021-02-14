@@ -1,6 +1,6 @@
 package br.com.inmetrics.teste.runner;
 
-import br.com.inmetrics.teste.commons.BaseTest;
+import br.com.inmetrics.teste.commons.BaseTestWeb;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
@@ -17,11 +17,11 @@ import cucumber.api.junit.Cucumber;
 	
 @RunWith(Cucumber.class)
 @CucumberOptions(monochrome = true, snippets = SnippetType.CAMELCASE, plugin = { "pretty",
-		"json:target/cucumber.json" }, features = { "./src/test/resources/features" }, glue = {
+		"json:target/cucumber.json" }, features = { "./src/test/resources/featuresWeb", "./src/test/resources/featuresApi",  }, glue = {
 				"br.com.inmetrics.teste.configuration","br.com.inmetrics.teste.steps" },
-        tags = {"@editarSucesso"})
+        tags = {"@alterarCadastroSucesso"})
 
-public class RunCucumberTest extends BaseTest {
+public class RunCucumberTest extends BaseTestWeb {
 		@AfterClass
 		public static void AfterTests() {
 			if (webDriver != null) {

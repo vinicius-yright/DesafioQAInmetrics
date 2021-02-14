@@ -1,11 +1,11 @@
 package br.com.inmetrics.teste.functionalities;
 
-import br.com.inmetrics.teste.commons.BaseTest;
+import br.com.inmetrics.teste.commons.BaseTestWeb;
 import br.com.inmetrics.teste.pages.CadastroWebPage;
 import br.com.inmetrics.teste.pages.GerenciarFuncionariosWebPage;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class GerenciarFuncionariosFunctionality extends BaseTest {
+public class GerenciarFuncionariosFunctionality extends BaseTestWeb {
 
     private GerenciarFuncionariosWebPage gerenciarFuncionariosWebPage;
     private CadastroWebPage cadastroWebPage;
