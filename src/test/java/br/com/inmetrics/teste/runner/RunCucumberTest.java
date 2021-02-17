@@ -19,7 +19,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(monochrome = true, snippets = SnippetType.CAMELCASE, plugin = { "pretty",
 		"json:target/cucumber.json" }, features = { "./src/test/resources/featuresWeb", "./src/test/resources/featuresApi",  }, glue = {
 				"br.com.inmetrics.teste.configuration","br.com.inmetrics.teste.steps" },
-        tags = {"@alterarCadastroSucesso"})
+        tags = {"@cadastrarApiSucesso"})
 
 public class RunCucumberTest extends BaseTestWeb {
 		@AfterClass
